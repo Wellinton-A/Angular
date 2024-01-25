@@ -1,0 +1,11 @@
+
+<h2 #trigger>Show me the way!</h2>
+
+<!-- on timer, on idle, on viewport, on interaction, on hover, immediate, prefetch -->
+@defer (on interaction(trigger)) {
+  <app-test />
+} @loading() {
+  <p>Loading...</p>
+} @error {
+  <p>Something get wrong!</p>
+}

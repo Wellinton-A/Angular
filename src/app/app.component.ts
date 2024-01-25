@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { TestComponent } from './components/test/test.component';
 import { TemplateBindingComponent } from './components/template-binding/template-binding.component';
 import { ControlFlowComponent } from './components/control-flow/control-flow.component';
+import { DeferrableViewsComponent } from './components/deferrable-views/deferrable-views.component';
 
 @Component({
   selector: 'app-root',
@@ -13,14 +14,15 @@ import { ControlFlowComponent } from './components/control-flow/control-flow.com
     RouterOutlet,
     TestComponent,
     TemplateBindingComponent,
-    ControlFlowComponent
+    ControlFlowComponent,
+    DeferrableViewsComponent
   ],
   providers: [TemplateBindingComponent],
   template: `
     <h2>Take care!!!</h2>
-    <app-test />
     <app-template-binding />
     <app-control-flow />
+    <app-deferrable-views />
   `,
 })
 export class AppComponent {

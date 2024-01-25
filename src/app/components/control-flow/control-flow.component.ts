@@ -16,6 +16,6 @@ export class ControlFlowComponent {
     {name: 'Zed'},
     {name: 'Zoe'},
     {name: 'Pedro'},
-    {name: 'Neguin'}
+    {name: 'Neguin'},
   ]
 }
