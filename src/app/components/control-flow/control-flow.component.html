@@ -1,0 +1,19 @@
+<h2>CONTROL FLOW</h2>
+
+@if (templateBindingComponent.age >= 5) {
+  Zed is getting older
+} @else if (templateBindingComponent.age < 5 && templateBindingComponent.age > 3) {
+  Zed is young
+} @else {
+  Zed is a baby!
+}
+
+@if (items$; as items) {
+  <ul>
+    @for (item of items; track item.name) {
+      <li>
+        {{item.name}}
+      </li>
+    }
+  </ul>
+}
