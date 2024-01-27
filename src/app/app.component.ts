@@ -6,6 +6,7 @@ import { TemplateBindingComponent } from './components/template-binding/template
 import { ControlFlowComponent } from './components/control-flow/control-flow.component';
 import { DeferrableViewsComponent } from './components/deferrable-views/deferrable-views.component';
 import { SignalsComponent } from './components/signals/signals.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { SignalsComponent } from './components/signals/signals.component';
     TemplateBindingComponent,
     ControlFlowComponent,
     DeferrableViewsComponent,
-    SignalsComponent
+    SignalsComponent,
+    PipesComponent
   ],
   providers: [TemplateBindingComponent],
   template: `
@@ -26,6 +28,7 @@ import { SignalsComponent } from './components/signals/signals.component';
     <app-control-flow />
     <app-deferrable-views />
     <app-signals />
+    <app-pipes />
   `,
 })
 export class AppComponent {

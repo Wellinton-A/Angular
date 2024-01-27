@@ -31,4 +31,5 @@ export class SignalsComponent {
   }
 
   // Mutate define o signal com base no valor atual sem o obj total
+
 }
