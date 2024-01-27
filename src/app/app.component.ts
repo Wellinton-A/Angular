@@ -5,6 +5,7 @@ import { TestComponent } from './components/test/test.component';
 import { TemplateBindingComponent } from './components/template-binding/template-binding.component';
 import { ControlFlowComponent } from './components/control-flow/control-flow.component';
 import { DeferrableViewsComponent } from './components/deferrable-views/deferrable-views.component';
+import { SignalsComponent } from './components/signals/signals.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { DeferrableViewsComponent } from './components/deferrable-views/deferrab
     TestComponent,
     TemplateBindingComponent,
     ControlFlowComponent,
-    DeferrableViewsComponent
+    DeferrableViewsComponent,
+    SignalsComponent
   ],
   providers: [TemplateBindingComponent],
   template: `
@@ -23,6 +25,7 @@ import { DeferrableViewsComponent } from './components/deferrable-views/deferrab
     <app-template-binding />
     <app-control-flow />
     <app-deferrable-views />
+    <app-signals />
   `,
 })
 export class AppComponent {
